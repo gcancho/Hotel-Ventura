@@ -34,7 +34,6 @@ footer{ position: absolute; bottom: 0; width: 100%; padding: 20px 0; background-
 footer .wrap{ position: relative;}
 footer .wrap > *{ font-size: 0.8em; color: #fff; display: block; text-align: center; }
 footer .creator{ text-decoration: none; transition: all 0.3s;} 
-footer .creator:hover{ transition: all 0.3s; transform: scale(1.05);} 
 
 
 

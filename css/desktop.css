@@ -5,7 +5,7 @@
 /*HEADER*/
 header .logo{ width: 116px;}
 header .ic_menu{ display: none;}
-header .menu{ display: inline-block; margin-left: 60px; width: initial; margin-top: initial;}
+header .menu{ position: absolute; display: inline-block; margin-left: 95px; width: initial; margin-top: initial;}
 header .menu ul li { background-color: initial; border-top: initial !important; border-bottom: initial; list-style: none; padding: 8px 0; display: inline-block;}
 header .menu ul li a{ padding: 8px 40px; font-size: 1.2em;}
 header .menu ul li:hover{ background: initial;}
