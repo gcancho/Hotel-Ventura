@@ -1,3 +1,2 @@
-$(document).ready(function () {
-    $(".menu ul li a").css("color", "#22aa66");
-});
+
+    // $(".menu ul li a").css("color", "#aa55bb");
