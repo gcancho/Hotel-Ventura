@@ -8,33 +8,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/site.css">
     <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 62em)">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 
 <body>
 
     <header>
-            <img class="logo" src="./images/logo.png" alt="logo">
-            <input class="hidden" type="checkbox" id="btn-menu">
-            <label for="btn-menu"><a class="ic_menu"></a></label>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Habitaciones</a></li>
-                    <li><a href="#">Ubicación</a></li>
-                    <li><a href="#">Contáctenos</a></li>
-                </ul>
-            </nav>
+        <img class="logo" src="./images/logo.png" alt="logo">
+        <input class="hidden" type="checkbox" id="btn-menu">
+        <label for="btn-menu"><a class="ic_menu"></a></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Habitaciones</a></li>
+                <li><a href="#">Ubicación</a></li>
+                <li><a href="#">Contáctenos</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="home">
-        <div class="slider">
-            <img class="" src="./images/hotel-13.jpg" alt="Image slider">
-            <img class="hidden" src="./images/recepcion.jpg" alt="Image slider">
-            <img class="hidden" src="./images/fachada_dia.jpg" alt="Image slider">
+        <div id="contenedor-slider" class="contenedor-slider">
+            <div id="slider" class="slider">
+                <section class="slider__section"><img
+                        src="./images/hotel-15.jpg"
+                        class="slider__img"></section>
+                <section class="slider__section"><img 
+                        src="./images/hotel-4.jpg"
+                        class="slider__img"></section>
+                <section class="slider__section"><img
+                        src="./images/hotel-12.jpg"
+                        class="slider__img"></section>
+                <section class="slider__section"><img
+                        src="images/hotel-16.jpg"
+                        class="slider__img"></section>
+            </div>
+            <div id="btn-prev" class="btn-prev">&#60;</div>
+            <div id="btn-next" class="btn-next">&#62;</div>
         </div>
-
     </section>
 
     <footer>
