@@ -8,7 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/site.css">
     <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 62em)">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 </head>
 
 <body>
@@ -34,23 +36,33 @@
     <section class="home">
         <div id="contenedor-slider" class="contenedor-slider">
             <div id="slider" class="slider">
-                <section class="slider__section"><img
-                        src="./images/hotel-15.jpg"
-                        class="slider__img"></section>
-                <section class="slider__section"><img 
-                        src="./images/hotel-4.jpg"
-                        class="slider__img"></section>
-                <section class="slider__section"><img
-                        src="./images/hotel-12.jpg"
-                        class="slider__img"></section>
-                <section class="slider__section"><img
-                        src="images/hotel-16.jpg"
-                        class="slider__img"></section>
+                <section class="slider__section"><img src="./images/hotel-15.jpg" class="slider__img"></section>
+                <section class="slider__section"><img src="./images/hotel-4.jpg" class="slider__img"></section>
+                <section class="slider__section"><img src="./images/hotel-12.jpg" class="slider__img"></section>
+                <section class="slider__section"><img src="images/hotel-16.jpg" class="slider__img"></section>
             </div>
             <div id="btn-prev" class="btn-prev">&#60;</div>
             <div id="btn-next" class="btn-next">&#62;</div>
         </div>
     </section>
+
+    <div class="popup" style="z-index: 999;">
+        <a href="#" id="mostrar-modal">
+            <span>+</span>
+        </a>
+        <div id="modal">
+            <div class="contenido-modal">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem atque ut maxime velit ipsam
+                    debitis tenetur eum nulla ea, a asperiores id veritatis hic, quis vel cupiditate quia fugiat cumque
+                    sit
+                    ex quisquam aut eius! Enim ullam laudantium est nemo.</p>
+            </div>
+            <a href="#" id="cerrar-modal">
+                <span>X</span>
+            </a>
+        </div>
+    </div>
+
 
     <footer>
         <section class="wrap">
