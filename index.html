@@ -28,7 +28,7 @@
             </ul>
         </nav>
         <div class="wrap-login">
-            <a class="ic_login" href="#"></a>
+            <a class="ic_login" href="#" onclick="mostrarLogin();"></a>
             <label class="only-desktop">Iniciar Sesión o Regístrate</label>
         </div>
     </header>
@@ -46,21 +46,24 @@
         </div>
     </section>
 
-    <div class="popup" style="z-index: 999;">
-        <a href="#" id="mostrar-modal">
-            <span>+</span>
-        </a>
-        <div id="modal">
-            <div class="contenido-modal">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem atque ut maxime velit ipsam
-                    debitis tenetur eum nulla ea, a asperiores id veritatis hic, quis vel cupiditate quia fugiat cumque
-                    sit
-                    ex quisquam aut eius! Enim ullam laudantium est nemo.</p>
+    <div class="login" id="login">
+        <form action="">
+            <div class="header-login">
+                <a class="ingresar" href="#">INGRESAR</a>
+                <a class="registrar" href="#">REGISTRAR</a>
+                <div class="line"></div>
             </div>
-            <a href="#" id="cerrar-modal">
-                <span>X</span>
-            </a>
-        </div>
+            <div class="body-login">
+                <h3>Bienvenido</h3>
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <a class="ingresar">Ingresar</a>
+            </div>
+            <div class="footer-login">
+                <label>¿Aún no te haz registrado?</label>
+                <a class="btn-crear-cuenta" href="#">Haz clic aquí</a>
+            </div>
+        </form>
     </div>
 
 
@@ -73,6 +76,7 @@
 
 
     <script src="./js/slider.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
