@@ -8,7 +8,9 @@ a{ cursor: pointer !important; text-decoration: none;}
 .only-mobile{ display: block;}
 .only-desktop{ display: none !important;}
 .line{ margin: 10px 0;width: 100%; height: 1px; border: 1px solid #fff;}
-
+.l_text_title{ font-size: 0.8em; }
+.l_text_button{ font-size: 0.8em;}
+.l_text_label{ font-size: 0.7em;}
 
 /*ICONS*/
 .ic_menu{ background: #fff;display: block; width: 35px; height: 35px; border-radius: 10px; background-image: url('../images/icons/menu.svg'); background-repeat: no-repeat;}
@@ -53,21 +55,18 @@ footer .creator{ text-decoration: none; transition: all 0.3s;}
 
 
 /*LOGIN*/
-.login{ position: absolute; top: -50%; left: 50%; transform: translate(-50%, -50%); background: #323234; width: 350px; margin: 10px auto; border-radius: 40px; padding: 30px 15px;}
+.login{ position: absolute; top: -60%; left: 50%; transform: translate(-50%, -50%); background: #323234; width: 350px; margin: 10px auto; border-radius: 40px; padding: 18px 15px; z-index: 20;}
 .login .header-login > a{ color: gray; display: inline-block; width: 49%; text-align: center; text-decoration: none;}
 .login .header-login .ingresar{ color: #fff;}
-/* .login .header-login .registrar{ color: #fff;} */
 .login .header-login .registrar:hover{ color: #fff; text-decoration: underline; text-decoration-color: #519C9F;}
 .login .header-login .ingresar:hover{ color: #fff; text-decoration: underline; text-decoration-color: #519C9F;} 
 .login .header-login .line{ display: block;}
 .login .body-login{ width: 80%; margin: 0 auto;}
 .login .body-login h3{ text-align: center; color: #ffffff; margin-bottom: 15px;}
 .login .body-login input{ display: block; border: 2px solid #519C9F; border-radius: 8px; height: 30px; padding: 0 10px; width: 100%; margin: 8px 0;}
-.login .body-login .ingresar{ display: block; width: 50%; margin: 20px auto; text-align: center; border: 2px solid #519C9F; border-radius: 10px; padding: 5px 10px; color: #fff;}
+.login .body-login .ingresar{ display: block; width: 50%; margin: 10px auto; text-align: center; border: 2px solid #519C9F; border-radius: 10px; padding: 5px 10px; color: #fff;}
 .login .footer-login label{ display: block; color: #fff; text-align: center;}
 .login .footer-login .btn-crear-cuenta{ margin-top: 3px; display: block; text-align: center; color: #fff; text-decoration: underline;}
-
-
 
 
 
