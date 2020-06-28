@@ -14,10 +14,10 @@
 <body>
 
     <header class="color-3">
-        <img class="logo" src="./images/logo.png" alt="logo">
+        <a href="index.html"><img class="logo" src="./images/logo.png" alt="logo"></a>
         <input class="hidden" type="checkbox" id="btn-menu">
         <label for="btn-menu"><a class="ic_menu"></a></label>
-        <nav class="menu">
+        <nav class="menu color-3">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="habitaciones.html">Habitaciones</a></li>
@@ -25,6 +25,10 @@
                 <li><a href="contactenos.html">Contáctenos</a></li>
             </ul>
         </nav>
+        <div class="wrap-login">
+            <a class="ic_login" href="#"></a>
+            <label class="only-desktop">Iniciar Sesión o Regístrate</label>
+        </div>
     </header>
 
     <div class="wrapper">
@@ -86,6 +90,28 @@
                 <a class="creator" href="http://giovannicancho.com/">Desarrollado por Giovanni Cancho</a>
             </section>
         </footer>
+
+        <!----------------------- LOGIN ----------------------------->
+        <div class="login">
+            <form action="">
+                <div class="header-login l_text_title">
+                    <a class="ingresar" href="#">INGRESAR</a>
+                    <a class="registrar" href="#">REGISTRAR</a>
+                    <div class="line"></div>
+                </div>
+                <div class="body-login login_text_title">
+                    <h3>Bienvenido</h3>
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <a class="ingresar login_text_button">Ingresar</a>
+                </div>
+                <div class="footer-login">
+                    <label class="login_text_label">¿Aún no te haz registrado?</label>
+                    <a class="btn-crear-cuenta" href="#">Haz clic aquí</a>
+                </div>
+            </form>
+        </div>
+        <!------------------------------------------------------------>
     </div>
 </body>
 

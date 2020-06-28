@@ -13,11 +13,11 @@
 
 <body>
 
-    <header class="color-3">    
-        <img class="logo" src="./images/logo.png" alt="logo">
+    <header class="color-3">
+        <a href="index.html"><img class="logo" src="./images/logo.png" alt="logo"></a>
         <input class="hidden" type="checkbox" id="btn-menu">
         <label for="btn-menu"><a class="ic_menu"></a></label>
-        <nav class="menu">
+        <nav class="menu color-3">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="habitaciones.html">Habitaciones</a></li>
@@ -25,34 +25,47 @@
                 <li><a href="contactenos.html">Contáctenos</a></li>
             </ul>
         </nav>
+        <div class="wrap-login">
+            <a class="ic_login" href="#"></a>
+            <label class="only-desktop">Iniciar Sesión o Regístrate</label>
+        </div>
     </header>
 
-    <!-- <div class="login">
-        <form action="">
-            <div class="header-login">
-                <a class="ingresar" href="#">INGRESAR</a>
-                <a class="registrar" href="#">REGISTRAR</a>
-                <div class="line"></div>
-            </div>
-            <div class="body-login">
-                <h3>Bienvenido</h3>
-                <input type="text" placeholder="Usuario">
-                <input type="password" placeholder="Contraseña">
-                <a class="ingresar">Ingresar</a>
-            </div>
-            <div class="footer-login">
-                <label>¿Aún no te haz registrado?</label>
-                <a class="btn-crear-cuenta" href="#">Haz clic aquí</a>
-            </div>
-        </form>
-    </div> -->
+    <div class="wrapper">
+        <section class="contact">
+            <div class="wrap">
+                <h2 class="title">Contáctenos</h2>
+                <form action="" method="post">
+                    <div class="columns">
+                        <div class="column-1">
+                            <label>Nombres y Apellidos</label>
+                            <input required type="text" name="nombre">
+                            <label>Correo electrónico</label>
+                            <input required type="email" name="correo">
+                        </div>
+                        <div class="column-1">
+                            <label>Teléfono</label>
+                            <input required type="number" name="telefono">
 
-    <footer>
-        <section class="wrap">
-            <label class="info">Hotel Ventura | Todos los derechos reservados</label>
-            <a class="creator" href="http://giovannicancho.com/">Desarrollado por Giovanni Cancho</a>
+                            <label>Asunto</label>
+                            <input required type="tel" name="asunto">
+                        </div>
+                    </div>
+                    <label>Mensaje</label>
+                    <textarea required name="mensaje" id="" cols="30" rows="5"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
         </section>
-    </footer>
+
+
+        <footer>
+            <section class="wrap">
+                <label class="info">Hotel Ventura | Todos los derechos reservados</label>
+                <a class="creator" href="http://giovannicancho.com/">Desarrollado por Giovanni Cancho</a>
+            </section>
+        </footer>
+    </div>
 </body>
 
 </html>
