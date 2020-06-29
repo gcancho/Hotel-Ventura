@@ -46,61 +46,54 @@
         </div>
     </section>
 
-    <!----------------------- LOGIN ----------------------------->
-    <div class="login">
-        <form action="">
-            <div class="header-login l_text_title">
-                <a class="ingresar" href="#">INGRESAR</a>
-                <a class="registrar" href="#">REGISTRAR</a>
-                <div class="line"></div>
-            </div>
-            <div class="body-login login_text_title">
-                <h3>Bienvenido</h3>
-                <input type="text" placeholder="Usuario">
-                <input type="password" placeholder="Contraseña">
-                <a class="ingresar login_text_button">Ingresar</a>
-            </div>
-            <div class="footer-login">
-                <label class="login_text_label">¿Aún no te haz registrado?</label>
-                <a class="btn-crear-cuenta" href="#">Haz clic aquí</a>
-            </div>
-        </form>
-    </div>
-    <!------------------------------------------------------------>
 
 
-    <!----------------------LOGIN 2 ------------------------------>
 
-    <div class="my-login">
-        <div class="container">
-            <div class="lbl-menu">
-                <label for="radio1">Ingresar</label>
-                <label for="radio2">Registrar</label>
+    <!----------------------LOGIN ------------------------------>
+
+    <div class="login" id>
+        <div class="pestanas">
+            <div class="lbl-menu color-4 text-white">
+                <label class="text-gray" for="radio1">INGRESAR</label>
+                <label class="text-gray" for="radio2">REGISTRAR</label>
             </div>
         </div>
         <div class="content">
             <input type="radio" name="radio" id="radio1" checked>
-            <div class="tab1">
-                <h2>Ingresar</h2>
-                <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro neque assumenda, est velit tempora
-                    impedit quidem laudantium nulla id reprehenderit. Rerum possimus reprehenderit, nam adipisci earum
-                    architecto ipsa autem voluptatibus!
-                </div>
-                <label for="radio3">Olvidaste tu contraseña</label>
+            <div class="tab1 color-4">
+                <form action="" method="post">
+                    <h3 class="text-white">Bienvenido</h3>
+                    <input class="input-login" type="text" placeholder="Usuario" required>
+                    <input class="input-login" type="password" placeholder="Contraseña" required>
+                    <input class="btn-login color-4 text-white" type="submit" value="INGRESAR">
+                    <div class="container-redirect-registrar redirect">
+                        <label class="text-gray">¿Aún no te haz registrado?</label>
+                        <label class="lbl-registro-redirect text-white redirect" for="radio2">Crea una cuenta</label>
+                    </div>
+                    <label class="lbl-contrasena-redirect text-white redirect" for="radio3">¿Olvidaste tu contraseña?</label>
+                </form>
             </div>
             <input type="radio" name="radio" id="radio2">
-            <div class="tab2">
-                <h2>Registrar</h2>
-                <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, natus vero! Quisquam ullam
-                    deleniti, ratione laboriosam a veritatis, distinctio quos eos voluptatum est nesciunt sunt
-                    doloremque debitis nulla, nobis obcaecati.
-                </div>
+            <div class="tab2 color-4 text-white">
+                <form action="" method="post">
+                    <h3 class="text-white">Registrate</h3>
+                    <input class="input-login" type="text" placeholder="Usuario" required>
+                    <input class="input-login" type="email" placeholder="Correo" required>
+                    <input class="input-login" type="password" placeholder="Contraseña" required>
+                    <input class="btn-login color-4 text-white" type="submit" value="Enviar">
+                    <label class="text-gray">¿Ya tienes una cuenta?</label>
+                    <label class="text-white redirect" for="radio1">Ingresar</label>
+                </form>
             </div>
             <input type="radio" name="radio" id="radio3">
-            <div class="tab3">
-                <h2>Clave</h2>
-                <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, necessitatibus!
-                </div>
+            <div class="tab3 color-4 text-white">
+                <form action="" method="post">
+                    <h3>¿Olvidaste tu contraseña?</h3>
+                    <label class="text-gray">Te enviaremos un correo para restablecer tu contraseña</label>
+                    <input class="input-login" type="email" placeholder="Correo" required>
+                    <input class="btn-login color-4 text-white" type="submit" value="Enviar">
+                    <label class="text-white redirect" for="radio1">Regresar a Login</label>
+                </form>
             </div>
         </div>
     </div>

@@ -3,6 +3,9 @@
 .wrap{ width: 70%; margin: 0 auto; position: relative;}
 .columns{ display: flex;}
 .column-1{ flex-grow: 1;}
+.redirect{ cursor:pointer;}
+.redirect:hover{ cursor:pointer; text-decoration: underline;}
+
 
 /*HEADER*/
 header{ height: 75px;}

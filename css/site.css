@@ -10,16 +10,18 @@ a{ cursor: pointer !important; text-decoration: none; color: #000;}
 .line{ margin: 10px 0;width: 100%; height: 1px; border: 1px solid #fff;}
 .wrapper{ min-height: 100%; position: relative;}
 .wrapper footer{ position: relative;}
-
+.btn{ width: auto; padding: 5px 10px;}
 
 /*COLORS*/
 .color-1{ background: #4C96D7;}
 .color-2{ background: #A55FC1;}
 .color-3{ background: #000000;}
+.color-4{ background:rgba(51,51,51, 0.9);}
 
 /*FONTS*/
 .title{ font-size: 1.2em; text-align: center; color: #000; margin: 20px auto 10px auto; letter-spacing: 0.1em;}
 .text-white{ color: #fff;}
+.text-gray{ color:#CFCFCF;}
 .login_text_label{ font-size: 0.7em;}
 .login_text_title{ font-size: 0.8em; }
 .login_text_button{ font-size: 0.8em;}
@@ -28,6 +30,7 @@ a{ cursor: pointer !important; text-decoration: none; color: #000;}
 /*BUTTONS*/
 .btn-reserve{ background: #000; border: 1px solid #fff; padding: 0 15px;}
 .btn-reserve:hover{ background: #fff; color: #000;}
+.btn-login{ margin: 10px auto; border: 2px solid #569CA6; width: auto; padding: 8px 10px; border-radius: 10px;}
 
 /*ICONS*/
 .ic_menu{ background: #fff;display: block; width: 35px; height: 35px; border-radius: 10px; background-image: url('../images/icons/menu.svg'); background-repeat: no-repeat;}
@@ -118,46 +121,38 @@ footer .creator{ text-decoration: none; transition: all 0.3s;}
 
 
 
-/*LOGIN*/
-.login{ position: absolute; top: -60%; left: 50%; transform: translate(-50%, -50%); background: #323234; width: 350px; margin: 10px auto; border-radius: 40px; padding: 18px 15px; z-index: 20;}
-.login .header-login > a{ color: gray; display: inline-block; width: 49%; text-align: center; text-decoration: none;}
-.login .header-login .ingresar{ color: #fff;}
-.login .header-login .registrar:hover{ color: #fff; text-decoration: underline; text-decoration-color: #519C9F;}
-.login .header-login .ingresar:hover{ color: #fff; text-decoration: underline; text-decoration-color: #519C9F;} 
-.login .header-login .line{ display: block;}
-.login .body-login{ width: 80%; margin: 0 auto;}
-.login .body-login h3{ text-align: center; color: #ffffff; margin-bottom: 15px;}
-.login .body-login input{ display: block; border: 2px solid #519C9F; border-radius: 8px; height: 30px; padding: 0 10px; width: 100%; margin: 8px 0;}
-.login .body-login .ingresar{ display: block; width: 50%; margin: 10px auto; text-align: center; border: 2px solid #519C9F; border-radius: 10px; padding: 5px 10px; color: #fff;}
-.login .footer-login label{ display: block; color: #fff; text-align: center;}
-.login .footer-login .btn-crear-cuenta{ margin-top: 3px; display: block; text-align: center; color: #fff; text-decoration: underline;}
 
 
-
-.my-login{
-    max-width: 600px;
+.login{
+    width: 310px;
+    min-width: 310px;
+    max-width: 350px;
     margin: 0 auto;
 }
 
-.container{
+.pestanas{
     width: 100%;
+    
 }
 
 .lbl-menu{
-    background: #fff;
     position: relative;
     display: flex;
     text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 0 30px;
 }
 .lbl-menu label{
     flex-grow: 1;
     padding: 20px;
-    color: #000;
     cursor: pointer;
     transition: all 400ms ease;
+    border-bottom: 1px solid #fff;
 }
 .lbl-menu label:hover{
-    background: #28435d;    
+    color: #fff; 
+    font-weight: bold;
 }
 .content{
     position: relative;
@@ -168,10 +163,10 @@ footer .creator{ text-decoration: none; transition: all 0.3s;}
     transition: all 600ms ease;
     opacity: 0;
     visibility: hidden;
-    transform: scale(0.9);
-    padding: 30px;
-    background: #fff;
+    
+    padding: 30px;    
     padding-bottom: 40px;
+   
 }
 #radio1,#radio2,#radio3{
     display: none;
@@ -185,7 +180,36 @@ footer .creator{ text-decoration: none; transition: all 0.3s;}
     transform: scale(1);
 }
 
-.content div:after{
+.tab1, .tab2, .tab3{ width:100%; 
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    }
+
+.tab1,.tab2,.tab3 h3{ text-align: center;}
+.tab1 .container-redirect-registrar{ text-align: center; cursor: pointer;}
+.tab1 label{ display: inline-block;}
+.tab1 .lbl-registro-redirect{ display: inline-block; cursor: pointer;}
+.tab1 .lbl-contrasena-redirect{ display: block; text-align: center; cursor: pointer;}
+.input-login{ color: #fff; margin-top: 10px; background: rgba(67,67,67, 0.8); text-align: center; height: 30px; border-radius: 10px; border: 1px solid #569CA6;}
+
+.tab3 label{ display: block; text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .content div:after{
     position: absolute;
     content: '';
     border-left: 10px solid transparent;
@@ -198,7 +222,7 @@ footer .creator{ text-decoration: none; transition: all 0.3s;}
 
 .content .tab2:after{
     left: 122px;
-}
+} */
 
 
 
