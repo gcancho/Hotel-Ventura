@@ -97,8 +97,47 @@ footer .creator{ text-decoration: none; transition: all 0.3s;}
 
 
 
+.overlay {
+	background: rgba(0,0,0,.7);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;    
+    z-index: 99;
+}
 
 
+.popup {
+	
+	opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    color: #fff;
+}
+
+.popup .btn-cerrar-popup:hover {
+	color: #fff;
+}
+
+.popup.active {	transform: scale(1); opacity: 1; }
 
 
 
@@ -128,6 +167,7 @@ footer .creator{ text-decoration: none; transition: all 0.3s;}
     min-width: 310px;
     max-width: 350px;
     margin: 0 auto;
+    transform: translateY(-240%);
 }
 
 .pestanas{

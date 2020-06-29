@@ -28,7 +28,7 @@
             </ul>
         </nav>
         <div class="wrap-login">
-            <a class="ic_login" href="#"></a>
+            <a class="ic_login btn-abrir-popup" id="btn-abrir-popup" href="#"></a>
             <label class="only-desktop">Iniciar Sesión o Regístrate</label>
         </div>
     </header>
@@ -51,57 +51,63 @@
 
     <!----------------------LOGIN ------------------------------>
 
-    <div class="login" id>
-        <div class="pestanas">
-            <div class="lbl-menu color-4 text-white">
-                <label class="text-gray" for="radio1">INGRESAR</label>
-                <label class="text-gray" for="radio2">REGISTRAR</label>
-            </div>
-        </div>
-        <div class="content">
-            <input type="radio" name="radio" id="radio1" checked>
-            <div class="tab1 color-4">
-                <form action="" method="post">
-                    <h3 class="text-white">Bienvenido</h3>
-                    <input class="input-login" type="text" placeholder="Usuario" required>
-                    <input class="input-login" type="password" placeholder="Contraseña" required>
-                    <input class="btn-login color-4 text-white" type="submit" value="INGRESAR">
-                    <div class="container-redirect-registrar redirect">
-                        <label class="text-gray">¿Aún no te haz registrado?</label>
-                        <label class="lbl-registro-redirect text-white redirect" for="radio2">Crea una cuenta</label>
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <!-- <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"></a> -->
+            <div class="login">
+                <div class="pestanas">
+                    <div class="lbl-menu color-4 text-white">
+                        <label class="text-gray" for="radio1">INGRESAR</label>
+                        <label class="text-gray" for="radio2">REGISTRAR</label>
+                        <a id="btn-cerrar-popup" class="btn-cerrar-popup" href="#">X</a>
                     </div>
-                    <label class="lbl-contrasena-redirect text-white redirect" for="radio3">¿Olvidaste tu contraseña?</label>
-                </form>
-            </div>
-            <input type="radio" name="radio" id="radio2">
-            <div class="tab2 color-4 text-white">
-                <form action="" method="post">
-                    <h3 class="text-white">Registrate</h3>
-                    <input class="input-login" type="text" placeholder="Usuario" required>
-                    <input class="input-login" type="email" placeholder="Correo" required>
-                    <input class="input-login" type="password" placeholder="Contraseña" required>
-                    <input class="btn-login color-4 text-white" type="submit" value="Enviar">
-                    <label class="text-gray">¿Ya tienes una cuenta?</label>
-                    <label class="text-white redirect" for="radio1">Ingresar</label>
-                </form>
-            </div>
-            <input type="radio" name="radio" id="radio3">
-            <div class="tab3 color-4 text-white">
-                <form action="" method="post">
-                    <h3>¿Olvidaste tu contraseña?</h3>
-                    <label class="text-gray">Te enviaremos un correo para restablecer tu contraseña</label>
-                    <input class="input-login" type="email" placeholder="Correo" required>
-                    <input class="btn-login color-4 text-white" type="submit" value="Enviar">
-                    <label class="text-white redirect" for="radio1">Regresar a Login</label>
-                </form>
+                </div>
+                <div class="content">
+                    <input type="radio" name="radio" id="radio1" checked>
+                    <div class="tab1 color-4">
+                        <form action="" method="post">
+                            <h3 class="text-white">Bienvenido</h3>
+                            <input class="input-login" type="text" placeholder="Usuario" required>
+                            <input class="input-login" type="password" placeholder="Contraseña" required>
+                            <input class="btn-login color-4 text-white" type="submit" value="INGRESAR">
+                            <div class="container-redirect-registrar redirect">
+                                <label class="text-gray">¿Aún no te haz registrado?</label>
+                                <label class="lbl-registro-redirect text-white redirect" for="radio2">Crea una
+                                    cuenta</label>
+                            </div>
+                            <label class="lbl-contrasena-redirect text-white redirect" for="radio3">¿Olvidaste tu
+                                contraseña?</label>
+                        </form>
+                    </div>
+                    <input type="radio" name="radio" id="radio2">
+                    <div class="tab2 color-4 text-white">
+                        <form action="" method="post">
+                            <h3 class="text-white">Registrate</h3>
+                            <input class="input-login" type="text" placeholder="Usuario" required>
+                            <input class="input-login" type="email" placeholder="Correo" required>
+                            <input class="input-login" type="password" placeholder="Contraseña" required>
+                            <input class="btn-login color-4 text-white" type="submit" value="Enviar">
+                            <label class="text-gray">¿Ya tienes una cuenta?</label>
+                            <label class="text-white redirect" for="radio1">Ingresar</label>
+                        </form>
+                    </div>
+                    <input type="radio" name="radio" id="radio3">
+                    <div class="tab3 color-4 text-white">
+                        <form action="" method="post">
+                            <h3>¿Olvidaste tu contraseña?</h3>
+                            <label class="text-gray">Te enviaremos un correo para restablecer tu contraseña</label>
+                            <input class="input-login" type="email" placeholder="Correo" required>
+                            <input class="btn-login color-4 text-white" type="submit" value="Enviar">
+                            <label class="text-white redirect" for="radio1">Regresar a Login</label>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
 
-
-    <!------------------------------------------------------------>
 
     <footer>
         <section class="wrap">
