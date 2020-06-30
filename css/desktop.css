@@ -3,6 +3,11 @@
 .wrap{ width: 70%; margin: 0 auto; position: relative;}
 .columns{ display: flex;}
 .column-1{ flex-grow: 1;}
+.column-2{ flex-grow: 2;}
+.column-3{ flex-grow: 3;}
+.column-4{ flex-grow: 4;}
+.column-5{ flex-grow: 5;}
+.column-6{ flex-grow: 6;}
 .redirect{ cursor:pointer;}
 .redirect:hover{ cursor:pointer; text-decoration: underline;}
 
@@ -35,8 +40,7 @@ section.location .map iframe{ width: 100%; height: 400px;}
 
 /*CONTACT*/
 section.contact .column-1:nth-child(1){ margin-right: 110px;}
-
-
+.datos{padding: 78px;}
 
 
 

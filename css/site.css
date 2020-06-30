@@ -83,11 +83,25 @@ section.contact form label{ margin-top: 15px; margin-bottom: 8px;}
 section.contact form input{ margin-bottom: 10px; height: 30px;}
 section.contact input[type="submit"]{ width: auto; padding: 0 10px; margin: 10px auto 20px; cursor: pointer;}
 
+.datos{ background: #72736B; color: #fff; padding: 24px 0; }
+.datos > label{ display: block;}
+.datos .block{ text-align: center; }
+.datos .block > label{ display: block; margin-top: 8px;}
+.datos .block > label:nth-of-type(1){font-weight: bold;}
+
+
+
 /*FOOTER*/
 footer{ position: absolute; bottom: 0; width: 100%; padding: 20px 0; background-color: #000;}
 footer .wrap{ position: relative;}
 footer .wrap > *{ font-size: 0.8em; color: #fff; display: block; text-align: center; }
 footer .creator{ text-decoration: none; transition: all 0.3s;} 
+
+
+
+
+
+
 
 /*404*/
 .error .img-404{ display: block; margin: 30px auto; height: 200px;}
