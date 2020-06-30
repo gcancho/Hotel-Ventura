@@ -11,6 +11,9 @@
 .redirect{ cursor:pointer;}
 .redirect:hover{ cursor:pointer; text-decoration: underline;}
 
+/*FONTS*/
+.title{ font-size: 1.4em; margin-bottom: 30px;}
+.title:after{ width: 100px; top: 30px;}
 
 /*HEADER*/
 header{ height: 75px;}
