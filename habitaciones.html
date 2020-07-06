@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/site.css">
     <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 62em)">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    
+
 </head>
 
 <body>
@@ -42,8 +42,8 @@
                         <div class="description-room color-3 text-white">
                             <label class="name">Habitación Simple. <strong>S/40</strong></label>
                             <div class="buttons-description">
-                                <a class="btn-reserve text-white" href="404.html">RESERVAR</a>
-                                <a class="more text-white ic-rigth" href="#">VER MÁS</a>
+                                <a class="btn-reserve text-white" href="#">RESERVAR</a>
+                                <a class="more text-white ic-rigth" id="btn-abrir-popup-room-1">VER MÁS</a>
                             </div>
                         </div>
                     </div>
@@ -52,8 +52,8 @@
                         <div class="description-room color-3 text-white">
                             <label class="name">Habitación Simple. <strong>S/40</strong></label>
                             <div class="buttons-description">
-                                <a class="btn-reserve text-white" href="404.html">RESERVAR</a>
-                                <a class="more text-white ic-rigth" href="#">VER MÁS</a>
+                                <a class="btn-reserve text-white" href="#">RESERVAR</a>
+                                <a class="more text-white ic-rigth" id="btn-abrir-popup-room-2">VER MÁS</a>
                             </div>
                         </div>
                     </div>
@@ -81,68 +81,65 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
-
-
-
-        <div class="overlay" id="overlay">
-            <div class="popup" id="popup">
-                <!-- <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"></a> -->
-                <div class="login">
-                    <div class="pestanas">
-                        <div class="lbl-menu color-4 text-white">
-                            <label class="text-gray" for="radio1">INGRESAR</label>
-                            <label class="text-gray" for="radio2">REGISTRAR</label>
-                            <a id="btn-cerrar-popup" class="btn-cerrar-popup" href="#">X</a>
+        <div class="overlay-room" id="overlay-room-1">
+            <div class="popup-room">
+                <a class="btn-cerrar-popup-room" id="btn-cerrar-popup-room-1">X</a>
+                <div class="wrap-popup">
+                    <img src="./images/room-2.jpg" alt="habitacion">
+                    <h3 class="subtitle">Habitación Simple</h3>
+                    <div class="list-popup cols">
+                        <div class="col-1">
+                            <label>Wi-fi de cortesía</label>
+                            <label>Aire acondicionado</label>
+                            <label>teléfono</label>
+                            <label>Televisor con cable</label>
                         </div>
-                    </div>
-                    <div class="content">
-                        <input type="radio" name="radio" id="radio1" checked>
-                        <div class="tab1 color-4">
-                            <form action="" method="post">
-                                <h3 class="text-white">Bienvenido</h3>
-                                <input class="input-login" type="text" placeholder="Usuario" required>
-                                <input class="input-login" type="password" placeholder="Contraseña" required>
-                                <input class="btn-login color-4 text-white" type="submit" value="INGRESAR">
-                                <div class="container-redirect-registrar redirect">
-                                    <label class="text-gray">¿Aún no te haz registrado?</label>
-                                    <label class="lbl-registro-redirect text-white redirect" for="radio2">Crea una
-                                        cuenta</label>
-                                </div>
-                                <label class="lbl-contrasena-redirect text-white redirect" for="radio3">¿Olvidaste tu
-                                    contraseña?</label>
-                            </form>
+                        <div class="col-1">
+                            <label>Mesa</label>
+                            <label>Baño propio</label>
+                            <label>Luces de colores</label>
                         </div>
-                        <input type="radio" name="radio" id="radio2">
-                        <div class="tab2 color-4 text-white">
-                            <form action="" method="post">
-                                <h3 class="text-white">Registrate</h3>
-                                <input class="input-login" type="text" placeholder="Usuario" required>
-                                <input class="input-login" type="email" placeholder="Correo" required>
-                                <input class="input-login" type="password" placeholder="Contraseña" required>
-                                <input class="btn-login color-4 text-white" type="submit" value="Enviar">
-                                <label class="text-gray">¿Ya tienes una cuenta?</label>
-                                <label class="text-white redirect" for="radio1">Ingresar</label>
-                            </form>
-                        </div>
-                        <input type="radio" name="radio" id="radio3">
-                        <div class="tab3 color-4 text-white">
-                            <form action="" method="post">
-                                <h3>¿Olvidaste tu contraseña?</h3>
-                                <label class="text-gray">Te enviaremos un correo para restablecer tu contraseña</label>
-                                <input class="input-login" type="email" placeholder="Correo" required>
-                                <input class="btn-login color-4 text-white" type="submit" value="Enviar">
-                                <label class="text-white redirect" for="radio1">Regresar a Login</label>
-                            </form>
+                        <div class="col-1 ">
+                            <div class="">
+                                <label>S/ 40.00</label>
+                                <a class="btn-reserve" href="">RESERVAR</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
+        <div class="overlay-room" id="overlay-room-2">
+            <div class="popup-room">
+                <a class="btn-cerrar-popup-room" id="btn-cerrar-popup-room-2">X</a>
+                <div class="wrap-popup">
+                    <img src="./images/room-2.jpg" alt="habitacion">
+                    <h3 class="subtitle">Habitación Simple</h3>
+                    <div class="list-popup cols">
+                        <div class="col-1">
+                            <label>Wi-fi de cortesía</label>
+                            <label>Aire acondicionado</label>
+                            <label>teléfono</label>
+                            <label>Televisor con cable</label>
+                        </div>
+                        <div class="col-1">
+                            <label>Mesa</label>
+                            <label>Baño propio</label>
+                            <label>Luces de colores</label>
+                        </div>
+                        <div class="col-1 ">
+                            <div class="">
+                                <label>S/ 50.00</label>
+                                <a class="btn-reserve" href="">RESERVAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
 
         <footer>
@@ -152,7 +149,7 @@
             </section>
         </footer>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="./js/popup.js"></script>
 
 </body>
 
