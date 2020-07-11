@@ -159,32 +159,9 @@ footer .creator{ text-decoration: none; transition: all 0.3s;}
 	display: flex;
 	visibility: hidden;
 }
-
 .overlay.active {
     visibility: visible;    
     z-index: 99;
-}
-
-
-.popup {
-	
-	opacity: 0;
-}
-
-.popup .btn-cerrar-popup {
-	font-size: 16px;
-	line-height: 16px;
-	display: block;
-	text-align: right;
-	transition: .3s ease all;
-    position: absolute;
-    right: 12px;
-    top: 8px;
-    color: #fff;
-}
-
-.popup .btn-cerrar-popup:hover {
-	color: #fff;
 }
 
 .popup.active {	transform: scale(1); opacity: 1; }
@@ -214,7 +191,6 @@ footer .creator{ text-decoration: none; transition: all 0.3s;}
     flex-grow: 1;
     padding: 20px;
     cursor: pointer;
-    transition: all 400ms ease;
     border-bottom: 1px solid #fff;
 }
 .lbl-menu label:hover{
@@ -227,30 +203,12 @@ footer .creator{ text-decoration: none; transition: all 0.3s;}
 .content > div{
     position: absolute;
     line-height: 1.8;
-    transition: all 600ms ease;
-    opacity: 0;
-    visibility: hidden;
-    
     padding: 30px;    
     padding-bottom: 40px;
-   
-}
-#radio1,#radio2,#radio3{
-    display: none;
-}
-#radio1:checked ~ .tab1,
-#radio2:checked ~ .tab2,
-#radio3:checked ~ .tab3
-{
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
+    width: 100%;
 }
 
-.tab1, .tab2, .tab3{ width:100%; 
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    }
+
 
 .tab1,.tab2,.tab3 h3{ text-align: center;}
 .tab1 .container-redirect-registrar{ text-align: center; cursor: pointer;}
@@ -258,10 +216,17 @@ footer .creator{ text-decoration: none; transition: all 0.3s;}
 .tab1 .lbl-registro-redirect{ display: inline-block; cursor: pointer;}
 .tab1 .lbl-contrasena-redirect{ display: block; text-align: center; cursor: pointer;}
 .input-login{ color: #fff; margin-top: 10px; background: rgba(67,67,67, 0.8); text-align: center; height: 30px; border-radius: 10px; border: 1px solid #569CA6;}
-
 .tab3 label{ display: block; text-align: center;}
 
-
+.tab{ 
+    position: absolute;
+    left: -10000px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.tab.active{
+    left: 0;
+ }
 
 
 

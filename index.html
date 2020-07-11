@@ -8,8 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/site.css">
     <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 62em)">
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato&family=Lobster&family=Merriweather&family=Mrs+Saint+Delafield&family=Open+Sans&family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Pangolin&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&family=Yellowtail&display=swap"
         rel="stylesheet">
@@ -30,7 +28,7 @@
             </ul>
         </nav>
         <div class="wrap-login">
-            <a class="ic_login btn-abrir-popup" id="btn-abrir-popup" href="#"></a>
+            <a class="ic_login btn-abrir-popup" id="btn-abrir-login" href="#"></a>
             <label class="only-desktop">Iniciar Sesión o Regístrate</label>
         </div>
     </header>
@@ -53,20 +51,18 @@
 
     <!----------------------LOGIN ------------------------------>
 
-    <div class="overlay" id="overlay">
-        <div class="popup" id="popup">
-            <!-- <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"></a> -->
+    <div class="overlay" id="overlay-login">
+        <div class="popup" id="popup-login">
             <div class="login">
                 <div class="pestanas">
                     <div class="lbl-menu color-4 text-white">
-                        <label class="text-gray" for="radio1">INGRESAR</label>
-                        <label class="text-gray" for="radio2">REGISTRAR</label>
-                        <a id="btn-cerrar-popup" class="btn-cerrar-popup" href="#">X</a>
+                        <label class="pestana text-gray active">INGRESAR</label>
+                        <label class="pestana text-gray">REGISTRAR</label>
+                        <a id="btn-cerrar-login" class="btn-cerrar-popup" href="#">X</a>
                     </div>
                 </div>
                 <div class="content">
-                    <input type="radio" name="radio" id="radio1" checked>
-                    <div class="tab1 color-4">
+                    <div class="tab1 tab color-4 active">
                         <form action="" method="post">
                             <h3 class="text-white">Bienvenido</h3>
                             <input class="input-login" type="text" placeholder="Usuario" required>
@@ -74,15 +70,14 @@
                             <input class="btn-login color-4 text-white" type="submit" value="INGRESAR">
                             <div class="container-redirect-registrar redirect">
                                 <label class="text-gray">¿Aún no te haz registrado?</label>
-                                <label class="lbl-registro-redirect text-white redirect" for="radio2">Crea una
+                                <label class="lbl-registro-redirect text-white redirect" id="crear-cuenta">Crea una
                                     cuenta</label>
                             </div>
-                            <label class="lbl-contrasena-redirect text-white redirect" for="radio3">¿Olvidaste tu
+                            <label class="lbl-contrasena-redirect text-white redirect" id="lbl-contrasena-redirect">¿Olvidaste tu
                                 contraseña?</label>
                         </form>
                     </div>
-                    <input type="radio" name="radio" id="radio2">
-                    <div class="tab2 color-4 text-white">
+                    <div class="tab2 tab color-4 text-white">
                         <form action="" method="post">
                             <h3 class="text-white">Registrate</h3>
                             <input class="input-login" type="text" placeholder="Usuario" required>
@@ -90,17 +85,16 @@
                             <input class="input-login" type="password" placeholder="Contraseña" required>
                             <input class="btn-login color-4 text-white" type="submit" value="Enviar">
                             <label class="text-gray">¿Ya tienes una cuenta?</label>
-                            <label class="text-white redirect" for="radio1">Ingresar</label>
+                            <label class="text-white redirect" id="lbl-ingresar">Ingresar</label>
                         </form>
                     </div>
-                    <input type="radio" name="radio" id="radio3">
-                    <div class="tab3 color-4 text-white">
+                    <div class="tab3 tab color-4 text-white">
                         <form action="" method="post">
                             <h3>¿Olvidaste tu contraseña?</h3>
                             <label class="text-gray">Te enviaremos un correo para restablecer tu contraseña</label>
                             <input class="input-login" type="email" placeholder="Correo" required>
                             <input class="btn-login color-4 text-white" type="submit" value="Enviar">
-                            <label class="text-white redirect" for="radio1">Regresar a Login</label>
+                            <label class="text-white redirect" id="lbl-regresar">Regresar a Login</label>
                         </form>
                     </div>
                 </div>
@@ -120,7 +114,7 @@
 
 
     <script src="./js/slider.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
