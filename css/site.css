@@ -80,8 +80,8 @@ section.home .slider img{ width: 100%;}
 .btn-next { right: 10px;}
 
 /*HABITACIONES*/
-section.rooms .container-rooms-2 .room{ flex-grow: 1; border: 1px solid #000; margin-bottom: 20px;}
-section.rooms .container-rooms-2 .room img{ height: 176px;}
+section.rooms .container-rooms-2 .room{ flex-grow: 1; border: 1px solid #000; max-width: 530px; margin: 0 auto 20px;}
+section.rooms .container-rooms-2 .room img{ width: 100%;}
 section.rooms .container-rooms-2 .room .description-room{ padding: 10px; text-align: center;}
 section.rooms .container-rooms-2 .room .description-room .buttons-description{ position: relative; margin: 0 auto; margin-top: 15px;}
 section.rooms .container-rooms-2 .room .description-room .buttons-description .btn-reserve{ padding: 5px;  }
