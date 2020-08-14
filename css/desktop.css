@@ -1,6 +1,7 @@
 .only-mobile{ display: none;}
 .only-desktop{ display: block !important;}
 .wrap{ width: 70%; margin: 0 auto; position: relative;}
+.wrap-footer{ width: 90%; margin: 0 auto; position: relative;}
 .columns{ display: flex;}
 .column-1{ flex-grow: 1;}
 .column-2{ flex-grow: 2;}

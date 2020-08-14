@@ -25,8 +25,8 @@
             </ul>
         </nav>
         <div class="wrap-login">
-            <a class="ic_login btn-abrir-popup" id="btn-abrir-popup" href="#"></a>
-            <label class="only-desktop">Iniciar Sesión o Regístrate</label>
+            <a class="ic_login btn-abrir-popup" id="btn-abrir-login"></a>
+            <label class="only-desktop" id="lbl-iniciar-sesion">Iniciar Sesión o Regístrate</label>
         </div>
     </header>
 
@@ -48,7 +48,7 @@
                     <div class="room">
                         <img src="./images/habitacion-02.jpg" alt="room">
                         <div class="description-room color-3 text-white">
-                            <label class="name">Habitación Simple. <strong>S/40</strong></label>
+                            <label class="name">Habitación Duplex. <strong>S/40</strong></label>
                             <div class="buttons-description">
                                 <a class="btn-reserve text-white" href="#">RESERVAR</a>
                                 <a class="more text-white ic-rigth" id="btn-abrir-popup-room-2">VER MÁS</a>
@@ -60,7 +60,7 @@
                     <div class="room">
                         <img src="./images/habitacion-03.jpg" alt="room">
                         <div class="description-room color-3 text-white">
-                            <label class="name">Habitación Simple. <strong>S/40</strong></label>
+                            <label class="name">Habitación Matrimonial. <strong>S/40</strong></label>
                             <div class="buttons-description">
                                 <a class="btn-reserve text-white" href="#">RESERVAR</a>
                                 <a class="more text-white ic-rigth" id="btn-abrir-popup-room-3">VER MÁS</a>
@@ -70,7 +70,7 @@
                     <div class="room">
                         <img src="./images/habitacion-04.jpg" alt="room">
                         <div class="description-room color-3 text-white">
-                            <label class="name">Habitación Simple. <strong>S/40</strong></label>
+                            <label class="name">Habitación con Jacuzzi. <strong>S/40</strong></label>
                             <div class="buttons-description">
                                 <a class="btn-reserve text-white" href="#">RESERVAR</a>
                                 <a class="more text-white ic-rigth" id="btn-abrir-popup-room-4">VER MÁS</a>
@@ -91,7 +91,7 @@
                         <div class="col-1">
                             <label>Wi-fi de cortesía</label>
                             <label>Aire acondicionado</label>
-                            <label>teléfono</label>
+                            <label>Teléfono</label>
                             <label>Televisor con cable</label>
                         </div>
                         <div class="col-1">
@@ -102,7 +102,6 @@
                         <div class="col-1 ">
                             <div class="">
                                 <label>S/ 40.00</label>
-                                <a class="btn-reserve" href="">RESERVAR</a>
                             </div>
                         </div>
                     </div>
@@ -114,7 +113,7 @@
                 <a class="btn-cerrar-popup-room" id="btn-cerrar-popup-room-2">X</a>
                 <div class="wrap-popup">
                     <img src="./images/habitacion-02.jpg" alt="habitacion">
-                    <h3 class="subtitle">Habitación Simple</h3>
+                    <h3 class="subtitle">Habitación Duplex</h3>
                     <div class="list-popup cols">
                         <div class="col-1">
                             <label>Wi-fi de cortesía</label>
@@ -129,8 +128,7 @@
                         </div>
                         <div class="col-1 ">
                             <div class="">
-                                <label>S/ 50.00</label>
-                                <a class="btn-reserve" href="">RESERVAR</a>
+                                <label>S/ 80.00</label>
                             </div>
                         </div>
                     </div>
@@ -142,7 +140,7 @@
                 <a class="btn-cerrar-popup-room" id="btn-cerrar-popup-room-3">X</a>
                 <div class="wrap-popup">
                     <img src="./images/habitacion-03.jpg" alt="habitacion">
-                    <h3 class="subtitle">Habitación Simple</h3>
+                    <h3 class="subtitle">Habitación Matrimonial</h3>
                     <div class="list-popup cols">
                         <div class="col-1">
                             <label>Wi-fi de cortesía</label>
@@ -158,7 +156,6 @@
                         <div class="col-1 ">
                             <div class="">
                                 <label>S/ 50.00</label>
-                                <a class="btn-reserve" href="">RESERVAR</a>
                             </div>
                         </div>
                     </div>
@@ -170,7 +167,7 @@
                 <a class="btn-cerrar-popup-room" id="btn-cerrar-popup-room-4">X</a>
                 <div class="wrap-popup">
                     <img src="./images/habitacion-04.jpg" alt="habitacion">
-                    <h3 class="subtitle">Habitación Simple</h3>
+                    <h3 class="subtitle">Habitación con Jacuzzi</h3>
                     <div class="list-popup cols">
                         <div class="col-1">
                             <label>Wi-fi de cortesía</label>
@@ -186,7 +183,6 @@
                         <div class="col-1 ">
                             <div class="">
                                 <label>S/ 50.00</label>
-                                <a class="btn-reserve" href="">RESERVAR</a>
                             </div>
                         </div>
                     </div>
@@ -194,16 +190,66 @@
             </div>
         </div>
         
-
+        <div class="overlay" id="overlay-login">
+            <div class="popup" id="popup-login">
+                <div class="login">
+                    <div class="pestanas">
+                        <div class="lbl-menu color-4 text-white">
+                            <label class="pestana text-gray active">INGRESAR</label>
+                            <label class="pestana text-gray">REGISTRAR</label>
+                            <a id="btn-cerrar-login" class="btn-cerrar-popup" href="#">X</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="tab1 tab color-4 active">
+                            <form action="" method="post">
+                                <h3 class="text-white">Bienvenido</h3>
+                                <input class="input-login" type="text" placeholder="Usuario" required>
+                                <input class="input-login" type="password" placeholder="Contraseña" required>
+                                <input class="btn-login color-4 text-white" type="submit" value="INGRESAR">
+                                <div class="container-redirect-registrar redirect">
+                                    <label class="text-gray">¿Aún no te haz registrado?</label>
+                                    <label class="lbl-registro-redirect text-white redirect" id="crear-cuenta">Crea una
+                                        cuenta</label>
+                                </div>
+                                <label class="lbl-contrasena-redirect text-white redirect" id="lbl-contrasena-redirect">¿Olvidaste tu
+                                    contraseña?</label>
+                            </form>
+                        </div>
+                        <div class="tab2 tab color-4 text-white">
+                            <form action="" method="post">
+                                <h3 class="text-white">Registrate</h3>
+                                <input class="input-login" type="text" placeholder="Usuario" required>
+                                <input class="input-login" type="email" placeholder="Correo" required>
+                                <input class="input-login" type="password" placeholder="Contraseña" required>
+                                <input class="btn-login color-4 text-white" type="submit" value="Enviar">
+                                <label class="text-gray">¿Ya tienes una cuenta?</label>
+                                <label class="text-white redirect" id="lbl-ingresar">Ingresar</label>
+                            </form>
+                        </div>
+                        <div class="tab3 tab color-4 text-white">
+                            <form action="" method="post">
+                                <h3>¿Olvidaste tu contraseña?</h3>
+                                <label class="text-gray">Te enviaremos un correo para restablecer tu contraseña</label>
+                                <input class="input-login" type="email" placeholder="Correo" required>
+                                <input class="btn-login color-4 text-white" type="submit" value="Enviar">
+                                <label class="text-white redirect" id="lbl-regresar">Regresar a Login</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <footer>
-            <section class="wrap">
+            <section class="wrap wrap-footer">
                 <label class="info">Hotel Ventura | Todos los derechos reservados</label>
                 <a class="creator" href="http://giovannicancho.com/">Desarrollado por Giovanni Cancho</a>
             </section>
         </footer>
     </div>
     <script src="./js/popups-habitaciones.js"></script>
+    <script src="./js/login.js"></script>
 
 </body>
 

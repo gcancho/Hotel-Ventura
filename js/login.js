@@ -7,6 +7,11 @@ let lblOlvidasteContrasena = document.getElementById('lbl-contrasena-redirect');
 let lblIngresar = document.getElementById('lbl-ingresar');
 let lblRegresar = document.getElementById('lbl-regresar');
 let crearCuenta = document.getElementById('crear-cuenta');
+let lblIniciarSesion = document.getElementById('lbl-iniciar-sesion');
+
+lblIniciarSesion.addEventListener('click', function(){
+    btnAbrirLogin.click();
+});
 
 btnAbrirLogin.addEventListener('click', function(){
     overlayLogin.classList.add('active');
@@ -14,6 +19,7 @@ btnAbrirLogin.addEventListener('click', function(){
 btnCerrarLogin.addEventListener('click', function(){
     overlayLogin.classList.remove('active');
 });
+
 pestanaLogin[0].addEventListener('click', function(){
     tab[1].classList.remove('active');
     tab[0].classList.add('active');
